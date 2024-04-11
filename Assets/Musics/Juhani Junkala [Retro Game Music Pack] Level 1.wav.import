@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://by7kuw2dleirn"
+path="res://.godot/imported/Juhani Junkala [Retro Game Music Pack] Level 1.wav-4e6b76ff64ab1f154b85cee567113533.sample"
+
+[deps]
+
+source_file="res://Assets/Musics/Juhani Junkala [Retro Game Music Pack] Level 1.wav"
+dest_files=["res://.godot/imported/Juhani Junkala [Retro Game Music Pack] Level 1.wav-4e6b76ff64ab1f154b85cee567113533.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

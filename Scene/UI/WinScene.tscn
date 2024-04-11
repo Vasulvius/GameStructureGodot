@@ -1,0 +1,118 @@
+[gd_scene load_steps=2 format=3 uid="uid://jgvtfgd1c0ue"]
+
+[ext_resource type="Script" path="res://Scripts/WinScene.cs" id="1_xamot"]
+
+[node name="WinScene" type="CanvasLayer"]
+script = ExtResource("1_xamot")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -300.0
+offset_right = 250.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.227451, 0.454902, 0.207843, 1)
+
+[node name="Title" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -43.5
+offset_top = 65.0
+offset_right = 43.5
+offset_bottom = 91.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 40
+text = "You win !"
+
+[node name="CenterContainer" type="CenterContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="StatsVBoxContainer" type="VBoxContainer" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Score" type="CenterContainer" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer"]
+layout_mode = 2
+
+[node name="ScoreContainer" type="HBoxContainer" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer/Score"]
+layout_mode = 2
+
+[node name="ScoreTitle" type="Label" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer/Score/ScoreContainer"]
+layout_mode = 2
+text = "Score :"
+
+[node name="ScoreContent" type="Label" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer/Score/ScoreContainer"]
+layout_mode = 2
+
+[node name="Progression" type="CenterContainer" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer"]
+layout_mode = 2
+
+[node name="ProgressContainer" type="HBoxContainer" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer/Progression"]
+layout_mode = 2
+
+[node name="ProgressTitle" type="Label" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer/Progression/ProgressContainer"]
+layout_mode = 2
+text = "Progression :"
+
+[node name="ProgressContent" type="Label" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer/Progression/ProgressContainer"]
+layout_mode = 2
+
+[node name="Time" type="CenterContainer" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer"]
+layout_mode = 2
+
+[node name="TimeContainer" type="HBoxContainer" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer/Time"]
+layout_mode = 2
+
+[node name="TimeTitle" type="Label" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer/Time/TimeContainer"]
+layout_mode = 2
+text = "Total time :"
+
+[node name="TimeContent" type="Label" parent="ColorRect/CenterContainer/VBoxContainer/StatsVBoxContainer/Time/TimeContainer"]
+layout_mode = 2
+
+[node name="ButtonsVBoxContainer" type="VBoxContainer" parent="ColorRect/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/CenterContainer/VBoxContainer/ButtonsVBoxContainer"]
+layout_mode = 2
+
+[node name="RestartButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer/ButtonsVBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Restart"
+
+[node name="NextButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer/ButtonsVBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Next level"
+
+[node name="MainMenuButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer/ButtonsVBoxContainer"]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="QuitButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer/ButtonsVBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/ButtonsVBoxContainer/HBoxContainer/RestartButton" to="." method="OnRestartButtonPressed"]
+[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/ButtonsVBoxContainer/HBoxContainer/NextButton" to="." method="OnNextButtonPressed"]
+[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/ButtonsVBoxContainer/MainMenuButton" to="." method="OnMainMenuButtonPressed"]
+[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/ButtonsVBoxContainer/QuitButton" to="." method="OnQuitButtonPressed"]

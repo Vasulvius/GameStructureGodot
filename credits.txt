@@ -1,0 +1,16 @@
+[center]
+[b]Team :[/b]
+Mephistase	|	Level Designer
+Sarkharth	|	Artist
+Nebre38-169	|	Lead Developper
+Vasulvius	|	Developper
+
+[b]Audio :[/b]
+Juhani Junkala	|	Musics
+den_yes		|	Game Over Sound Effect
+qubodup		|	Win Sound Effect
+Wobbleboxx.com	|	Coin get
+dklon		|	Jumping Sound
+Konita Tutorials|	Hit sound
+
+[/center]

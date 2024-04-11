@@ -1,0 +1,97 @@
+[gd_scene load_steps=4 format=3 uid="uid://vw1fg23woyc1"]
+
+[ext_resource type="Script" path="res://Scripts/MainMenu.cs" id="1_4nh51"]
+[ext_resource type="PackedScene" uid="uid://blpqajjadx1ao" path="res://Scene/Level/level1.tscn" id="2_2gvxo"]
+[ext_resource type="StyleBox" uid="uid://dw6cy0s3ijouf" path="res://Assets/ButtonStyle/MainMenuButtonSyule.tres" id="3_0thog"]
+
+[node name="MainMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4nh51")
+startingLevel = ExtResource("2_2gvxo")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.164706, 0.101961, 0.27451, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48
+anchor_top = 0.486
+anchor_right = 0.48
+anchor_bottom = 0.486
+offset_left = -101.96
+offset_top = -85.928
+offset_right = 102.04
+offset_bottom = 86.072
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Start" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("3_0thog")
+text = "Launch
+"
+
+[node name="Levels" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("3_0thog")
+text = "Levels
+"
+
+[node name="Tutorial" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("3_0thog")
+text = "Tutorial"
+
+[node name="Credits" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("3_0thog")
+text = "Credits"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("3_0thog")
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Start" to="." method="OnStartButtonPressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Levels" to="." method="OnLevelsButtonPressed"]
+[connection signal="pressed" from="VBoxContainer/Tutorial" to="." method="OnTutoButtonPressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="OnCreditsButtonPressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="OnQuitButtonPressed"]

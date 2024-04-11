@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqr2kwcqpprt5"]
+
+[ext_resource type="Script" path="res://Scripts/PlayLevelButton.cs" id="2_ts52t"]
+[ext_resource type="PackedScene" uid="uid://blpqajjadx1ao" path="res://Scene/Level/level1.tscn" id="6_mqxpb"]
+[ext_resource type="StyleBox" uid="uid://dw6cy0s3ijouf" path="res://Assets/ButtonStyle/MainMenuButtonSyule.tres" id="7_ibkfn"]
+[ext_resource type="PackedScene" uid="uid://vw1fg23woyc1" path="res://Scene/SpecialLevel/MainMenu.tscn" id="8_054un"]
+
+[node name="LevelSelector" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bakcground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.352941, 0.482353, 0.45098, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 4
+
+[node name="Level1Button" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("7_ibkfn")
+text = "Level 1"
+script = ExtResource("2_ts52t")
+scene = ExtResource("6_mqxpb")
+
+[node name="Level2Button" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("7_ibkfn")
+text = "Level 2"
+script = ExtResource("2_ts52t")
+
+[node name="Level3Button" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("7_ibkfn")
+text = "Level 3"
+script = ExtResource("2_ts52t")
+
+[node name="Level4Button" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("7_ibkfn")
+text = "Level 4"
+script = ExtResource("2_ts52t")
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(200, 35)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.907
+anchor_right = 0.5
+anchor_bottom = 0.907
+offset_left = -74.5
+offset_top = -5.73602
+offset_right = 74.5
+offset_bottom = 17.264
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("7_ibkfn")
+text = "Back to Main Menu"
+script = ExtResource("2_ts52t")
+scene = ExtResource("8_054un")

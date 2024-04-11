@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://blpqajjadx1ao"]
+
+[ext_resource type="PackedScene" uid="uid://c5sx51ypgrnyl" path="res://Scene/Manager/SceneManager.tscn" id="2_5jasa"]
+[ext_resource type="PackedScene" uid="uid://dhcoja5e85w2m" path="res://Scene/Manager/StatsManager.tscn" id="3_1fcrr"]
+[ext_resource type="PackedScene" uid="uid://cch45pjxfsu7d" path="res://Scene/UI/InGameUI.tscn" id="5_2oja8"]
+
+[node name="World" type="Node2D"]
+
+[node name="SceneManager" parent="." instance=ExtResource("2_5jasa")]
+
+[node name="StatsManager" parent="." instance=ExtResource("3_1fcrr")]
+
+[node name="InGameUI" parent="." instance=ExtResource("5_2oja8")]

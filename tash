@@ -1,0 +1,491 @@
+[33mcommit 18e4d94bd55b5077295453f9d58be7994b19c995[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sun Nov 12 11:21:13 2023 +0100
+
+    robinet-map: Imported the tile set and created motif from it
+
+[33mcommit 7351b50a532e2fa75c76480d3afb6d31916a658e[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sun Nov 12 10:41:43 2023 +0100
+
+    animImp : animation thought code
+
+[33mcommit 67040e599f031c677feaf1b4a6b11eaa07deee00[m
+Author: Sarkharth <joly.daphne@gmail.com>
+Date:   Sun Nov 12 10:42:28 2023 +0100
+
+    particles : Added soap particles to soap
+
+[33mcommit 20e5fe17b635ba1bed2e4a6bf75b556901f4e5b5[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sun Nov 12 10:08:59 2023 +0100
+
+    gameFeel: full soundEffect with updated credits
+
+[33mcommit 22f7b337543d85075b839a15aa0d9a6b364ee1ea[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sun Nov 12 09:29:18 2023 +0100
+
+    gameFeel: added sound effect player for boost, jump, bash + change win sound
+
+[33mcommit b1915b73ed8bb9d86ac9fca8a2deb29ecc985a88[m[33m ([m[1;32mfeatureAudioManager[m[33m)[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sun Nov 12 09:42:38 2023 +0100
+
+    featureAudioManager : playSoundEffect(Music, Volume (optional)
+
+[33mcommit 842967d31efb8eea298aa1f0a62557194229797d[m[33m ([m[1;32mminorFix[m[33m)[m
+Author: Sarkharth <joly.daphne@gmail.com>
+Date:   Sun Nov 12 09:28:47 2023 +0100
+
+    gameJuice : modified bubble sprite outline saturation
+
+[33mcommit 55bbe5626830a88108f06101f019108083402fbd[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sun Nov 12 09:23:32 2023 +0100
+
+    rotation: the rotation of the soap follow the speed when flying
+
+[33mcommit 988ecabbf51b39d9cdec0e24ad77dd8bf9bd67ed[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sun Nov 12 08:53:34 2023 +0100
+
+    minorFix : Edit credit text
+
+[33mcommit 4c721b796903107fc0902cabbfb8ed39d3166280[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sun Nov 12 08:43:18 2023 +0100
+
+    minorFix : Add restart button to settings
+
+[33mcommit 6dbf0c60640bcc36ba624e95957ff0c0224f0dc8[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sun Nov 12 08:40:10 2023 +0100
+
+    minorFix : set music volume by default value
+
+[33mcommit db78e1680c9d0b8125079d4f69503b0e725886f3[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sun Nov 12 01:35:30 2023 +0100
+
+    manyLevels: change win and gameOver window, tweak level1, change scripts
+
+[33mcommit 39b9446537b6a79804302bfa22a871c69dea05d9[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sun Nov 12 00:25:39 2023 +0100
+
+    manyLevels: finished level1 with bubble, window, more contrast, 3 DeadZone
+
+[33mcommit 06f62ef569cdcff0bf9a84ef5401349b271615c4[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sun Nov 12 00:00:01 2023 +0100
+
+    manyLevels: add level1, big changes on slopeBase, remove raycast limitation for bash, change bubble explode FPS from 5 to 10
+
+[33mcommit ea3d311858bbbd1d2a31305dfbabe1fc62f72835[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 23:22:48 2023 +0100
+
+    manyLevels: small tweaks at firstLevel
+
+[33mcommit 3859c68f17ab35af8807a7389a446e00731e90ea[m[33m ([m[1;32mmusicAndSound[m[33m)[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sun Nov 12 00:28:08 2023 +0100
+
+    musciAndSound : bug fix Inpout map
+
+[33mcommit 617a0d59b8af70829f62fbd4d6989d498030779b[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sun Nov 12 00:17:16 2023 +0100
+
+    musicAndSound : sound effects
+
+[33mcommit a5516ce09916b9c4e43adeb7b81980ce19e3920d[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 23:32:48 2023 +0100
+
+    musicAndSound : Add continous main theme
+
+[33mcommit 4cca2f0fb6caea118f638846f27bc636c7d6e51e[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 22:58:32 2023 +0100
+
+    musicAndSound : GameOver and Win jingle
+
+[33mcommit b3205c3d72b6db7fe9c91a9e3035ca2a73c1961e[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 22:25:31 2023 +0100
+
+    musicAndSound : loop main theme function
+
+[33mcommit 3be7c01beb91baa7a0a55fda7cdb0d4b2f5cd1c4[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 18:57:29 2023 +0100
+
+    musicAndSound : Add AudioManager
+
+[33mcommit 80dca204ce16f9f688e934aadb75669e2c565fea[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 22:59:14 2023 +0100
+
+    rescale: rescaled firstLevel
+
+[33mcommit 4c6dfeae58e6e961c49ad1121f8e5c8312cd315a[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 22:42:57 2023 +0100
+
+    animImp: added bubble static animation and explosion animation
+
+[33mcommit 84d357194ca35f334ab8ccbc9aacc16a86eaf732[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 22:27:02 2023 +0100
+
+    animImp: Added logic to animation of speed for soap
+
+[33mcommit fe1c9f81baae12e49d8fa67d09d8ae66052a8694[m
+Author: Sarkharth <joly.daphne@gmail.com>
+Date:   Sat Nov 11 22:05:53 2023 +0100
+
+    basicAssets : Updated asset sprites and added animations to soap and bubbles
+
+[33mcommit d395507fa67eb74355ec24993019ae570df73689[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 21:58:12 2023 +0100
+
+    boostArea: Created a boost zone
+
+[33mcommit 0d7c76820889294fcf0738c73612056b72e935e1[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 21:38:38 2023 +0100
+
+    dashFix: Added different cool down on jump and bash
+
+[33mcommit 9113f4b39b8f765f4c4d434ee65ce1e31e385d54[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 21:25:11 2023 +0100
+
+    dashFix: modified function and fixed bugs for jump and bash
+
+[33mcommit 1e0062aaead2ecb97a8341992e9ace7bc2ce0001[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 18:52:07 2023 +0100
+
+    improveFirstLevel: add missed tileset
+
+[33mcommit add9fd8b84d286713820977b64e6cc4348fd0d4d[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 18:49:29 2023 +0100
+
+    improveFirstLevel : tilemap and size change
+
+[33mcommit f37a2ec86b61beb3db320156ae2bc2bbf1968c1e[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 18:35:35 2023 +0100
+
+    bubbles: Added a small programm animation
+
+[33mcommit 239908e96bb3532ead10d77f8783776e2468a5f4[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 18:09:53 2023 +0100
+
+    BugFix on autoload usage
+
+[33mcommit 46d666bbd7e3c36629dcc549cc39b60bce3ee7bf[m[33m ([m[1;32mtestFeatureRaph[m[33m)[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 18:00:47 2023 +0100
+
+    Bubbles: Added logic to bubble to add a point to score and disappear
+
+[33mcommit a8030898c6acd5e00d225e9d1f1ea9c0dc779f5b[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 17:50:12 2023 +0100
+
+    featureUI : not significant update
+
+[33mcommit 60cd348eb9868a2f5203b5fc08d5f96808bb15ae[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 17:41:13 2023 +0100
+
+    featureUI : UI scene folder + put UI scenes in UI folder
+
+[33mcommit e87f53352c467d46e91ab859a59611c935c6bd9a[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 17:29:48 2023 +0100
+
+    featureUI : bug fix CreditsScene
+
+[33mcommit 04c7859fb023c3efb394c82c6bc53bc94f504e15[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 17:48:18 2023 +0100
+
+    bubbles: Added a bubble scene
+
+[33mcommit bfaa7459f3a0c5668b9d9781dd2716e06f63c982[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 16:46:26 2023 +0100
+
+    firstLevel: link to main menu
+
+[33mcommit 175d90109764fd4cffb44050f86f6e1201048034[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 16:40:38 2023 +0100
+
+    firstLevel: tweak firstLevel
+
+[33mcommit 405adb4d7e2678dc1d2b3478179052343d8429d5[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 16:13:06 2023 +0100
+
+    firstLevel: add pillar below all slopes
+
+[33mcommit 2486c7bba96354c9bd68b42edcb84628c3b5229b[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 16:08:12 2023 +0100
+
+    firstLevel: add SlopeLow
+
+[33mcommit d7d5ca51f014d0682577ff0675e9df6961d43a8e[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 16:03:35 2023 +0100
+
+    firstLevel: Tweaking of the firstLevel Scene
+
+[33mcommit a5d4fab1e3be3a7235214d836cf85f8e37c56520[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 15:51:05 2023 +0100
+
+    firstLevel: add slopeHigh and slopeEqual
+
+[33mcommit aeb2e3c554b33fc582eadb9d07f8ca8d25cdb0f8[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 15:36:06 2023 +0100
+
+    firstLevel: creation firstLevel and change layers of DeadZone, Slopes and Soap
+
+[33mcommit 83d96e28f6cf51808aef56624cad6f847cd20f68[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 16:10:13 2023 +0100
+
+    featureUI : Link MainMenu and testLevelUI as the game level
+
+[33mcommit 55537b1a28a70609f510d399dcca38ece1df2f14[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 16:04:25 2023 +0100
+
+    featureUI : Add win scene
+
+[33mcommit fd2fc82ee41d24c3d094052e6afd312b46933e09[m
+Author: Sarkharth <joly.daphne@gmail.com>
+Date:   Sat Nov 11 16:13:21 2023 +0100
+
+    basicAssets : added basic sprites
+
+[33mcommit caf4809413ff0f9d5adf0e9d461cd74c35f6c7e0[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 16:12:04 2023 +0100
+
+    grounded: Added a cool down to the jump and dash action
+
+[33mcommit c13823acffd18b3c8580f7c79d133f9b9a419011[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 16:06:17 2023 +0100
+
+    grounded: Added a raycast to check if over a platform, and a Area to check if in contact with a platform
+
+[33mcommit e9d3fe9d8b59f96824c16d6edeb45ea597b53a2c[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 15:45:12 2023 +0100
+
+    featureUI : restart button function
+
+[33mcommit 570695c276cb84747a31a97ca16b392d9f93ac25[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 15:40:14 2023 +0100
+
+    featureUI : upgrade gamer over : pause + score n progression
+
+[33mcommit ce90988115cef25e9ba4ceb661c583b0d913936b[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 15:14:18 2023 +0100
+
+    gameTest: big tweaks in testLevelDesign
+
+[33mcommit d5337a442446b28d5ec8598a4bbdcd4a6c610697[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 15:12:11 2023 +0100
+
+    deathZone: Added a deathZone
+
+[33mcommit 87111fc1e24b8afe327493eb9a5192e13048eac5[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 14:56:25 2023 +0100
+
+    Gameover public
+
+[33mcommit bc7409176dc90e21dcb48a54fc77754388c4e0ca[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 14:52:10 2023 +0100
+
+    moreSlopes: add bash for Soap
+
+[33mcommit 0a97b9f6afde4aa1fd1372db931ff4530d873bb5[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 14:39:23 2023 +0100
+
+    moreSlopes: add slopeDouble
+
+[33mcommit fffaaba8ca250da377b30b765b6d9d9a0a624612[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 14:50:06 2023 +0100
+
+    pauseTimer: Modified the way the stop watch worked
+
+[33mcommit 0d3ef7b939ad687094c2830d0d21e04f2be31e69[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 14:39:00 2023 +0100
+
+    featureUI : Add pause mode
+
+[33mcommit 79e56d89606baed19b4175f9dcad246ba793217f[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 14:13:49 2023 +0100
+
+    levelDesign: Added a slope and made a test level
+
+[33mcommit 64ae88175180b7c8c5e956976200cfe99f94a40f[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 13:52:54 2023 +0100
+
+    levelDesign: 3 default slope
+
+[33mcommit ef46cf5482adeba6f72b51956a9ff99634d1dc90[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 11:21:31 2023 +0100
+
+    levelDesign: Groupe Soap et Tweaking
+
+[33mcommit c91d677d07546cfa4030098f576a70ebd1c38a82[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 10:20:16 2023 +0100
+
+    levelDesign: Tweaking of slopes
+
+[33mcommit c293953e645eff76273be9e948c99666be4bdcae[m
+Author: Mephistase <btguillaume@orange.fr>
+Date:   Sat Nov 11 09:53:58 2023 +0100
+
+    levelDesign : ajout node slope et testLevelDesign
+
+[33mcommit 67b991d3d5a31eaed2a599474a26e180ee6084df[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 12:01:22 2023 +0100
+
+    featureUI : minor param changes
+
+[33mcommit bbc8ebfd840bf91cbc3895d6ac9101d88c4fc46b[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 11:57:43 2023 +0100
+
+    featureUI : Connect SceneManager with SettingsMenu and GameOverMenu
+
+[33mcommit c0b10024abdf858a1edd98093f514ef809181712[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 10:47:24 2023 +0100
+
+    featureUI : Add SceneManager as a singleton
+
+[33mcommit cc851fb90b6f9d8c9a338822c2b485086828483c[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 10:00:57 2023 +0100
+
+    featureUI : Add GameOverUI code
+
+[33mcommit 85c53e42e32302e5accd793ae667702c9d944035[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Sat Nov 11 09:30:49 2023 +0100
+
+    featureUI : Add GameOver UI (no code)
+
+[33mcommit f7827c0cf91b294f84723a39e05a0a4e772131e3[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 11:59:47 2023 +0100
+
+    camera: Added a camera following the soap with a lerp
+
+[33mcommit 9a321b0677de0749b917c699ed5cf991bbd28668[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 11:15:10 2023 +0100
+
+    statsManager: added progress and score. Autoload depreciated
+
+[33mcommit d804d693b871c83c725e7d44088de424f8369dae[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 09:58:51 2023 +0100
+
+    statsManager: added a start,end zone and their logic with the stop watch
+
+[33mcommit 255cef052ac6ee61f0954b310038eb216caf90c7[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 09:26:33 2023 +0100
+
+    statsManager: added a stop watch
+
+[33mcommit 2338d3fceddac22a139f8827f6b48df580f5a49f[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 08:54:47 2023 +0100
+
+    Test singleton: Added a singleton for Soap
+
+[33mcommit a6f3fa5351d27a2ef3e418a35c04d65a9b17e3ad[m
+Author: deathtracks <antoine.doste@hotmail.fr>
+Date:   Sat Nov 11 00:35:23 2023 +0100
+
+    Test-platform: Added soap physic + behaviour
+
+[33mcommit a16b77c606557a9e382ce3a60f866b8eea62654c[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Tue Nov 7 23:09:18 2023 +0100
+
+    basicGameStructure : make credit scene translate
+
+[33mcommit ef23a8aa92233adf6fdb329b0ce645d863f58a19[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Tue Nov 7 22:47:05 2023 +0100
+
+    basicGameStructure : add main menu button to SettingsMenu
+
+[33mcommit e2c30c53ffc841b6913513f345e826a91a2de2bf[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Tue Nov 7 22:43:22 2023 +0100
+
+    basicGameStructure : credit scene basis functions
+
+[33mcommit 62553e0eb9c3f6d9b9501e26ddd4bd776b722b17[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Tue Nov 7 21:47:05 2023 +0100
+
+    basicGameStructure : Function setting button + setting menu basis
+
+[33mcommit 27307051cbae61b2cfd8e98b26e9a7a7e5e8d830[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Tue Nov 7 21:21:16 2023 +0100
+
+    basicGameStructure : Update layout
+
+[33mcommit e600d88076cd7c416b44147a75c7a96a62e32e51[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Tue Nov 7 20:28:45 2023 +0100
+
+    basicGameStructure : add buttons layout + start and quit function
+
+[33mcommit 81b41c536b891fe8b391b2df5ff61d9ad0bda3fb[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Tue Nov 7 19:14:37 2023 +0100
+
+    Main : adding the blank Godot project
+
+[33mcommit 2315ced624badc939ac2fc1d1bdaeed3bb136c8e[m
+Author: Vasulvius <leurond.raphael@gmail.com>
+Date:   Tue Nov 7 19:10:18 2023 +0100
+
+    Initial commit

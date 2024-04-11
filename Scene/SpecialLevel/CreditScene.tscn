@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=3 uid="uid://feo38n2kpdfa"]
+
+[ext_resource type="Script" path="res://Scripts/CreditScene.cs" id="1_bnnvn"]
+[ext_resource type="PackedScene" uid="uid://c5sx51ypgrnyl" path="res://Scene/Manager/SceneManager.tscn" id="2_r6ja0"]
+
+[sub_resource type="Animation" id="Animation_iy20t"]
+resource_name = "TextTranslation"
+length = 40.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/RichTextLabel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 40),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 648), Vector2(0, -1000)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pw0ut"]
+_data = {
+"TextTranslation": SubResource("Animation_iy20t")
+}
+
+[node name="CreditScene" type="Control" node_paths=PackedStringArray("textLabel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bnnvn")
+textLabel = NodePath("AnimationPlayer/RichTextLabel")
+
+[node name="SceneManager" parent="." instance=ExtResource("2_r6ja0")]
+settingsWithRestartButton = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_pw0ut")
+}
+autoplay = "TextTranslation"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="AnimationPlayer"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 1000.0
+grow_horizontal = 2
+grow_vertical = 0
+bbcode_enabled = true
+text = "[center]
+[b]Team :[/b]
+Mephistase	|	Happyness Manager
+Sarkharth	|	Artist
+Nebre38-169	|	Developper gameplay
+Vasulvius	|	Developper UI
+
+[b]Audio :[/b]
+Juhani Junkala	|	Musics
+den_yes		|	Game Over Sound Effect
+qubodup		|	Win Sound Effect
+Wobbleboxx.com	|	Coin get
+dklon		|	Jumping Sound
+Konita Tutorials|	Hit sound
+
+[/center]"
+scroll_active = false
